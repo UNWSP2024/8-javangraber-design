@@ -1,5 +1,5 @@
 # Programmer: Javan Graber
-# Date: 3/15/2026
+# Date: 3/18/2026
 # Program #1: Initials
 
 # Create the main function
@@ -20,7 +20,7 @@ def initials_generator(persons_name):
     # Create the loop that examines the strings
     for string in split_name:
         print(string[0].upper(), sep='', end='')
-        print('.', sep = ' ', end = '')
+        print('. ', sep = ' ', end = '')
 
 
 # Call main
