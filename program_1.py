@@ -1,21 +1,28 @@
+# Programmer: Javan Graber
+# Date: 3/15/2026
 # Program #1: Initials
-# Write a program that gets a string containing a person's first, middle, and last names, 
-# and displays their first, middle, and last initials.  
-# For example, if the user enters John William Smith, the program should display J. W. S.
 
-# Add your logic starting on line 11
+# Create the main function
+def main():
+    # Get name
+    persons_name = str(input("Enter your first, middle, and last name: "))
 
-def initials_generator(personsName):
+    # Call the initials function
+    initials_generator(persons_name)
 
-    personsInitials = ""
-    #    Add your logic here
+def initials_generator(persons_name):
+    # Create a variable string
+    string_variable = ''
 
-    return personsInitials.strip()
+    # Split the name given
+    split_name = persons_name.split()
 
-# Example usage
+    # Create the loop that examines the strings
+    for string in split_name:
+        print(string[0].upper(), sep='', end='')
+        print('.', sep = ' ', end = '')
+
+
+# Call main
 if __name__=="__main__":
-    personsName = input('Enter the users first, middle, and last name')
-
-    initials = initials_generator(personsName)
-
-    print(initials)
+    main()
